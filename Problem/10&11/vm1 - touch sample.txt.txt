@@ -1,0 +1,20 @@
+vm1 - touch sample.txt
+	ls
+	nano sample.txt
+	ctrl x
+	cat sample.txt
+	scp sample.txt vagrant@172.168.2.5:~/home/vagrant
+	
+
+
+
+
+
+vm2 -   ls /home
+	ifconfig
+				inet172.168.2.5
+	ls
+
+
+
+password :ASUS
