@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            height:50vh;
+            margin: 0; 
+        }
+
+        .main-container {
+            left: 50%;
+            top: 20%;
+            width: 30%;
+            height: 50%;
+            border: solid 2px black;
+            border-radius: 5px;
+            text-align: center;
+            margin: 5px;
+            padding: 15px;
+            background-color: rgb(228, 221, 221);
+            transition: ease-in 0.5s;
+        }
+        .main-container:hover{
+            transform: scale(1.05) ;
+        }
+        .label {
+            padding: 10px;
+            margin: 15px;
+        }
+
+        #input {
+            
+            margin: 15px 0px 5px 0px;
+            padding: 5px 5px 5px 5px;
+            border-radius: 5px;
+        }
+
+        #btn {
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            margin: 5px;
+            background-color: greenyellow;
+            
+        }
+
+        #btn:hover {
+            transform: scaleX(1.05) scaleY(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Student Login form</h1>
+    <form action="/" method="post" class="main-container">
+        <label class="label">Username :</label>
+        <input id="input" type="text" placeholder="Enter Username" name="Username" required>
+        <br />
+        <label class="label">Password :</label>
+        <input id="input" type="password" placeholder="Enter Password" name="Password" required maxlength="20">
+        <br />
+
+        <button id="btn" type="submit">Login</button>
+        <br />
+        <input type="checkbox" checked="checked">Remember me
+    </form>
+</body>
+</html>
